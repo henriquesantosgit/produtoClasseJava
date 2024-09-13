@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-       
+        
         System.out.println("Digite o nome do produto:");
         String nome = scanner.nextLine();
 
@@ -20,13 +20,13 @@ public class Main {
         System.out.println("Digite a quantidade em estoque:");
         int quantidadeEstoque = scanner.nextInt();
 
-       
+        
         Produto produto = new Produto(nome, preco, quantidadeEstoque);
 
-      
+       
         System.out.println("\nProduto criado com sucesso:");
-        System.out.println(produto);
+        produto.exibirDetalhes();  
 
-        scanner.close();  
+       
     }
 }
